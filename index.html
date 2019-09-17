@@ -3,11 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Volunteer Form</title>
+        <style>
+            div {margin-top: 15px}
+        </style>
     </head>
     <body>
         <h1>Volunteer Form</h1>
         <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" >
-            <p>My Info</p>
+           <fieldset>
+               <p>My Info</p>
+               <div>
+                    <label>First Name: <input type="text" name="first_name_field" placeholder="First Name"/></label>
+                </div>
+                <div>
+                    <label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name"/></label>
+               </div>
+               <div>
+                    <label>Phone Number: <input type="phone" name="phone_field" placeholder="555-867-5309"/></label>
+               </div>
+               <div>
+                    <label>Email Address: <input type="email" name="email_field" placeholder="youremail@wherever.com" /></label>
+               </div>
+           </fieldset>
+           
+            
         </form>
     </body>
 </html>
