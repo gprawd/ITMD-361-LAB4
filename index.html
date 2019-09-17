@@ -19,13 +19,14 @@
                     <label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name"/></label>
                </div>
                <div>
-                    <label>Phone Number: <input type="phone" name="phone_field" placeholder="555-867-5309"/></label>
+                    <label>Phone Number: <input type="number" name="phone_field" placeholder="555-867-5309"/></label>
                </div>
                <div>
                     <label>Email Address: <input type="email" name="email_field" placeholder="email@anything.com" /></label>
                </div>
                <div>
-                    <label>Gender: <input type="radio" name="gender_field" value="male"/>Male <input type="radio" name="gender_field" value="female"/>Female</label>
+                    <label>Gender: <input type="radio" name="gender_field" value="male"/>Male </label>
+                    <label><input type="radio" name="gender_field" value="female"/>Female</label>
                </div>
                <div>
                    <label>Age:</label>
@@ -67,14 +68,15 @@
                     <label><input type="checkbox" name="available_field[]" value="Saturday"/> Saturday </label>
                 </div>
                 <div>
+                    <input type="hidden" name="hidden_field" value="gprawdzik"/>
+                </div>
+                <div>
                     <label for="our-textarea">Any Comments?</label>
                 </div>
                 <div>
-                    <textarea cols="30" rows="10" name="comments-field" id="our-textarea "></textarea> 
+                    <textarea cols="30" rows="10" name="comments-field" id="our-textarea"></textarea> 
                 </div>
-                <div>
-                    <input type="hidden" name="hidden_field" value="gprawdzik"/>
-                </div>
+
            </fieldset>
            <input type="submit" value="Send Me"/>
         </form>
